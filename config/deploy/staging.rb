@@ -62,7 +62,7 @@
 
 # ssh huy.nguyen2@35.198.216.213
 
-server "35.198.216.213/",
+server "35.198.216.213",
   user: "huy.nguyen2",
   roles: %w{web db app},
   ssh_options: {
