@@ -62,11 +62,11 @@
 
 # ssh huy.nguyen2@35.198.216.213
 
-server "http://35.198.216.213/",
+server "35.198.216.213/",
   user: "huy.nguyen2",
   roles: %w{web db app},
   ssh_options: {
-    keys: %w(/home/huy/.ssh/id_rsa),
+    keys: %w(~/.ssh/id_rsa),
     forward_agent: false,
     auth_methods: %w(publickey password)
     # password: "please use keys"
