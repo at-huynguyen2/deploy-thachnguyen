@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Football Club</title>
+
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- CSS Style -->
+<!-- <link rel="stylesheet" href="Football%20Club%20WordPress%20Theme%20Demo%20-%20ThemeBoy_files/user-style.css"> -->
+<link rel="stylesheet" href="./css/user-style.css">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="http://demo.themeboy.com/sportspress/favicon.ico">
+<link rel="apple-touch-icon" href="http://demo.themeboy.com/sportspress/football-club/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://demo.themeboy.com/sportspress/football-club/images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://demo.themeboy.com/sportspress/football-club/images/apple-touch-icon-114x114.png">
+
+<!-- Used Fonts -->
+<link href="Football%20Club%20WordPress%20Theme%20Demo%20-%20ThemeBoy_files/css.css" rel="stylesheet" type="text/css">
+
+<!-- JavaScript -->
+<script src="Football%20Club%20WordPress%20Theme%20Demo%20-%20ThemeBoy_files/jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+	function e(){
+		$(".iframe").attr("height", $(window).height() - 38 + "px");
+	}
+
+	$(window).resize(function(){
+		e();
+	}).resize();
+
+	$(".menu .variation .handle").click(function() {
+		$(this).closest("li").toggleClass("open").siblings("li").removeClass("open");
+		return false;
+	});
+
+	$(".exit").click(function() {
+		$(".menu .variation").removeClass("open");
+	});
+
+	window.onblur = function() {
+		$(".menu .variation").removeClass("open");
+	}
+});
+</script>
+<link rel="stylesheet" type="text/css" id="SL_Style" href="Football%20Club%20WordPress%20Theme%20Demo%20-%20ThemeBoy_files/translator.css"></head>
+<body>
+	<div id="switcher" class="switcher">
+		<div class="center">
+			<div class="header" style="background-color: maroon; padding: 2px 90px;">
+		  <nav class="navbar navbar-inverse" style="margin: 0px">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="/" style="padding: 0px"><img src="./../img/logo-fifa.png" width="200" height="50"></a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
+		      <li><a href="/team"><span class="glyphicon glyphicon-edit"></span> Nhập thông tin các đội bóng</a></li>
+		      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-equalizer"></span>Chia bảng đấu<span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="/group">Đấu loại World Cup</a></li>
+		          <li><a href="/result_table">Đấu loại theo mùa</a></li>
+		        </ul>
+		      </li>
+		      <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Xem kết quả</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
+		      <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		</div>
+		</div>
+	</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Đăng nhập</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+		<script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.8&amp;appId=818713328266556"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/demo.themeboy.com\/football-club-soccer\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://demo.themeboy.com/football-club-soccer/wp-includes/js/wp-emoji-release.min.js?ver=4.7.3" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dashicons-css" href="http://demo.themeboy.com/football-club-soccer/wp-includes/css/dashicons.min.css?ver=4.7.3" type="text/css" media="all">
+<link rel="stylesheet" id="sportspress-general-css" href="//demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/css/sportspress.css?ver=2.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="sportspress-icons-css" href="//demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/css/icons.css?ver=2.2" type="text/css" media="all">
+<link rel="stylesheet" id="sportspress-timelines-css" href="//demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress-timelines/css/sportspress-timelines.css?ver=2.2" type="text/css" media="all">
+<link rel="stylesheet" id="sportspress-user-scores-css" href="//demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress-user-scores/css/sportspress-user-scores.css?ver=2.3" type="text/css" media="all">
+<link rel="stylesheet" id="mega-slider-style-css" href="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/plugins/mega-slider/assets/css/mega-slider.css?ver=1.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="news-widget-style-css" href="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/plugins/news-widget/assets/css/news-widget.css?ver=1.0.1" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="#">
+
+<link rel="stylesheet" id="social-sidebar-classic-css" href="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/plugins/social-sidebar/assets/css/skins/classic.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rookie-framework-style-css" href="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/framework.css?ver=4.7.3" type="text/css" media="all">
+<link rel="stylesheet" id="rookie-style-css" href="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/style.css?ver=4.7.3" type="text/css" media="all">
+	<style type="text/css">
+	body {
+		width: 1px;
+		min-width: 100%;
+		*width: 100%;
+	}
+	</style>
+	<style type="text/css"> /* SportsPress Custom CSS */ .megaslider__row--active, .megaslider__row--active:hover { background: #d4000f; }</style>		<style type="text/css"> /* Football Club Custom Layout */
+		@media screen and (min-width: 1025px) {
+			.site, .site-header, .site-content, .site-footer, .site-info {
+				width: 1000px; }
+		}
+		</style>
+		<script type="text/javascript" src="http://demo.themeboy.com/football-club-soccer/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://demo.themeboy.com/football-club-soccer/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="http://demo.themeboy.com/football-club-soccer/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://demo.themeboy.com/football-club-soccer/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.themeboy.com/football-club-soccer/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.7.3">
+<meta name="generator" content="SportsPress 2.3.2">
+<meta name="generator" content="SportsPress Pro 2.3.2">
+<link rel="canonical" href="http://demo.themeboy.com/football-club-soccer/">
+<link rel="shortlink" href="http://demo.themeboy.com/football-club-soccer/">
+<link rel="alternate" type="application/json+oembed" href="http://demo.themeboy.com/football-club-soccer/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.themeboy.com%2Ffootball-club-soccer%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://demo.themeboy.com/football-club-soccer/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fdemo.themeboy.com%2Ffootball-club-soccer%2F&amp;format=xml">
+		</head><body class="home page-template page-template-template-homepage page-template-template-homepage-php page page-id-2"><div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=818713328266556";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<link rel="icon" href="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/cropped-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/cropped-favicon-270x270.png">
+
+
+
+<div class="sp-header"></div>
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="content" class="site-content">
+		<div class="mega-slider-template">			<div class="mega-slider" data-autoplay="1" data-delay="5">
+				<div class="mega-slider__stage">
+				<a href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1843" class="mega-slider__slide" style="background-image: url(&quot;http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-1-1024x683.jpg&quot;); display: none; pointer-events: none;">
+					<span class="mega-slider__slide__label" style="bottom: -50px;">
+					<span class="mega-slider__slide__date">March 26, 2017</span>
+					<span class="mega-slider__slide__title">Season Kickoff Imminent</span>
+					</span>
+				</a>
+				<a href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1841" class="mega-slider__slide" style="background-image: url(&quot;http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-2-1024x687.jpg&quot;); display: none; pointer-events: none;">
+					<span class="mega-slider__slide__label" style="bottom: -50px;">
+					<span class="mega-slider__slide__date">March 22, 2017</span>
+					<span class="mega-slider__slide__title">Koby’s Unstoppable Career</span>
+					</span>
+				</a>
+				<a href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1839" class="mega-slider__slide" style="background-image: url(&quot;http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-3-1024x683.jpg&quot;); display: none; pointer-events: none;">
+							<span class="mega-slider__slide__label" style="bottom: -50px;">
+								<span class="mega-slider__slide__date">March 18, 2017</span>
+								<span class="mega-slider__slide__title">Meet Our Cheerleaders</span>
+							</span>
+						</a>
+						<a href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1836" class="mega-slider__slide mega-slider__slide--active" style="background-image: url(&quot;http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-4-1024x691.jpg&quot;); display: block; z-index: 0;">
+							<span class="mega-slider__slide__label" style="bottom: 0px;">
+								<span class="mega-slider__slide__date">March 13, 2017</span>
+								<span class="mega-slider__slide__title">Highlights From Last Season</span>
+							</span>
+						</a>
+						<a href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1821" class="mega-slider__slide" style="background-image: url(http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-5-1024x685.jpg); display: none;">
+							<span class="mega-slider__slide__label">
+								<span class="mega-slider__slide__date">March 3, 2017</span>
+								<span class="mega-slider__slide__title">Starting Lineup Announced</span>
+							</span>
+						</a>
+									</div>
+				<div class="mega-slider__sidebar">
+					<div class="mega-slider__row">
+						<img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-1-150x150.jpg" class="mega-slider__row__thumbnail wp-post-image" alt="" height="150" width="150">														<span class="mega-slider__row__label">
+						<span class="mega-slider__row__title">Season Kickoff Imminent</span>
+						<span class="mega-slider__row__date">March 26, 2017</span>
+						<a class="mega-slider__row__link" href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1843">Read more...</a>
+						</span>
+					</div>
+					<div class="mega-slider__row">
+						<img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-2-150x150.jpg" class="mega-slider__row__thumbnail wp-post-image" alt="" height="150" width="150">														<span class="mega-slider__row__label">
+						<span class="mega-slider__row__title">Koby’s Unstoppable Career</span>
+						<span class="mega-slider__row__date">March 22, 2017</span>
+						<a class="mega-slider__row__link" href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1841">Read more...</a>
+						</span>
+					</div>
+					<div class="mega-slider__row">
+							<img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-3-150x150.jpg" class="mega-slider__row__thumbnail wp-post-image" alt="" height="150" width="150">														<span class="mega-slider__row__label">
+							<span class="mega-slider__row__title">Meet Our Cheerleaders</span>
+							<span class="mega-slider__row__date">March 18, 2017</span>
+							<a class="mega-slider__row__link" href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1839">Read more...</a>
+						</span>
+					</div>
+					<div class="mega-slider__row mega-slider__row--active">
+							<img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-4-150x150.jpg" class="mega-slider__row__thumbnail wp-post-image" alt="" height="150" width="150">														<span class="mega-slider__row__label">
+							<span class="mega-slider__row__title">Highlights From Last Season</span>
+							<span class="mega-slider__row__date">March 13, 2017</span>
+							<a class="mega-slider__row__link" href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1836">Read more...</a>
+						</span>
+					</div>
+							<div class="mega-slider__row">
+								<img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sportspress-soccer-blog-5-150x150.jpg" class="mega-slider__row__thumbnail wp-post-image" alt="" height="150" width="150"><span class="mega-slider__row__label">
+							<span class="mega-slider__row__title">Starting Lineup Announced</span>
+							<span class="mega-slider__row__date">March 3, 2017</span>
+							<a class="mega-slider__row__link" href="http://demo.themeboy.com/football-club-soccer/?post_type=post&amp;p=1821">Read more...</a>
+						</span>
+						</div>
+					</div>
+			</div>
+			</div>
+	<div id="primary" class="content-area content-area-right-sidebar">
+		<main id="main" class="site-main" role="main">
+
+
+
+<article id="post-2" class="post-2 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<div class="homepage-widgets">
+			<div class="sp-widget-align-left"><aside id="sportspress-event-blocks-2" class="widget widget_sportspress widget_sp_event_blocks"><h4 class="sp-table-caption">Fixtures</h4><div class="sp-template sp-template-event-blocks">
+	<div class="sp-table-wrapper">
+		<table class="sp-event-blocks sp-data-table sp-paginated-table" data-sp-rows="8">
+			<thead><tr><th></th></tr></thead> 			<tbody>
+									<tr class="sp-row sp-post alternate">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/kangaroos/" title="Kangaroos"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-124x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-124x128.png 124w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-290x300.png 290w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos.png 393w" sizes="(max-width: 124px) 100vw, 124px" height="128" width="124"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/bulls/" title="Bulls"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bulls-98x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bulls-98x128.png 98w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bulls-230x300.png 230w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bulls-25x32.png 25w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bulls.png 341w" sizes="(max-width: 98px) 100vw, 98px" height="128" width="98"></a>							<time class="sp-event-date" datetime="2017-05-02 16:30:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1433/">May 2, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1433/"><span class="sp-result">4:30 pm</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1433/">Kangaroos v Bulls</a>							</h4>
+
+						</td>
+					</tr>
+										<tr class="sp-row sp-post">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/tigers/" title="Tigers"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png 115w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-269x300.png 269w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-29x32.png 29w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers.png 341w" sizes="(max-width: 115px) 100vw, 115px" height="128" width="115"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/sharks/" title="Sharks"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-128x106.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-128x106.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-300x249.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-32x27.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks.png 526w" sizes="(max-width: 128px) 100vw, 128px" height="106" width="128"></a>							<time class="sp-event-date" datetime="2017-05-03 20:00:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1399/">May 3, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1399/"><span class="sp-result">8:00 pm</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1399/">Tigers v Sharks</a>							</h4>
+
+						</td>
+					</tr>
+										<tr class="sp-row sp-post alternate">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/sharks/" title="Sharks"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-128x106.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-128x106.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-300x249.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks-32x27.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/sharks.png 526w" sizes="(max-width: 128px) 100vw, 128px" height="106" width="128"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/rams/" title="Rams"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-128x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-128x128.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-150x150.png 150w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-300x298.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams.png 397w" sizes="(max-width: 128px) 100vw, 128px" height="128" width="128"></a>							<time class="sp-event-date" datetime="2017-05-14 18:30:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1403/">May 14, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1403/"><span class="sp-result">6:30 pm</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1403/">Sharks v Rams</a>							</h4>
+
+						</td>
+					</tr>
+								</tbody>
+		</table>
+	</div>
+	</div></aside></div><div class="sp-widget-align-right"><aside id="sportspress-event-blocks-3" class="widget widget_sportspress widget_sp_event_blocks"><h4 class="sp-table-caption">Results</h4><div class="sp-template sp-template-event-blocks">
+	<div class="sp-table-wrapper">
+		<table class="sp-event-blocks sp-data-table sp-paginated-table" data-sp-rows="8">
+			<thead><tr><th></th></tr></thead> 			<tbody>
+									<tr class="sp-row sp-post alternate">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/eagles/" title="Eagles"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-106x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-106x128.png 106w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-248x300.png 248w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-26x32.png 26w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles.png 368w" sizes="(max-width: 106px) 100vw, 106px" height="128" width="106"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/tigers/" title="Tigers"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png 115w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-269x300.png 269w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-29x32.png 29w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers.png 341w" sizes="(max-width: 115px) 100vw, 115px" height="128" width="115"></a>							<time class="sp-event-date" datetime="2017-03-28 18:00:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1648/">March 28, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1648/"><span class="sp-result">1</span> - <span class="sp-result">1</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1648/">Eagles v Tigers</a>							</h4>
+
+						</td>
+					</tr>
+										<tr class="sp-row sp-post">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/foxes/" title="Foxes"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/foxes-114x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/foxes-114x128.png 114w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/foxes-266x300.png 266w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/foxes-28x32.png 28w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/foxes.png 357w" sizes="(max-width: 114px) 100vw, 114px" height="128" width="114"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/rams/" title="Rams"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-128x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-128x128.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-150x150.png 150w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-300x298.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/rams.png 397w" sizes="(max-width: 128px) 100vw, 128px" height="128" width="128"></a>							<time class="sp-event-date" datetime="2017-03-26 19:30:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1653/">March 26, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1653/"><span class="sp-result">2</span> - <span class="sp-result">0</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1653/">Foxes v Rams</a>							</h4>
+
+						</td>
+					</tr>
+										<tr class="sp-row sp-post alternate">
+						<td>
+							<a class="team-logo logo-odd" href="http://demo.themeboy.com/football-club-soccer/team/budgies/" title="Budgies"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-113x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-113x128.png 113w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-266x300.png 266w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-28x32.png 28w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies.png 341w" sizes="(max-width: 113px) 100vw, 113px" height="128" width="113"></a> <a class="team-logo logo-even" href="http://demo.themeboy.com/football-club-soccer/team/bluebirds/" title="Bluebirds"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-128x123.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-128x123.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-300x289.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds.png 393w" sizes="(max-width: 128px) 100vw, 128px" height="123" width="128"></a>							<time class="sp-event-date" datetime="2017-03-25 17:00:00">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1658/">March 25, 2017</a>							</time>
+							<h5 class="sp-event-results">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1658/"><span class="sp-result">0</span> - <span class="sp-result">2</span></a>							</h5>
+																												<h4 class="sp-event-title">
+								<a href="http://demo.themeboy.com/football-club-soccer/event/1658/">Budgies v Bluebirds</a>							</h4>
+
+						</td>
+					</tr>
+								</tbody>
+		</table>
+	</div>
+	</div></aside></div><div class="sp-widget-align-none"><aside id="sportspress-league-table-2" class="widget widget_sportspress widget_league_table widget_sp_league_table"><div class="sp-template sp-template-league-table">
+	<h4 class="sp-table-caption">Primary League Standings</h4><div class="sp-table-wrapper"><div class="sp-scrollable-table-wrapper"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><table class="sp-league-table sp-data-table sp-sortable-table sp-scrollable-table sp-paginated-table dataTable no-footer" data-sp-rows="16" id="DataTables_Table_0" role="grid"><thead><tr role="row"><th class="data-rank sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Pos">Pos</th><th class="data-name sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Team">Team</th><th class="data-p sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="P">P</th><th class="data-w sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="W">W</th><th class="data-d sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="D">D</th><th class="data-l sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="L">L</th><th class="data-f sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="F">F</th><th class="data-a sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="A">A</th><th class="data-gd sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="GD">GD</th><th class="data-pts sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Pts">Pts</th></tr></thead><tbody><tr class="sp-row-no-0 odd" role="row"><td class="data-rank">2</td><td class="data-name has-logo"><a href="http://demo.themeboy.com/football-club-soccer/team/budgies/"><span class="team-logo"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-113x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-113x128.png 113w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-266x300.png 266w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies-28x32.png 28w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/budgies.png 341w" sizes="(max-width: 113px) 100vw, 113px" height="128" width="113"></span>Budgies</a></td><td class="data-p">9</td><td class="data-w">6</td><td class="data-d">2</td><td class="data-l">1</td><td class="data-f">17</td><td class="data-a">11</td><td class="data-gd">6</td><td class="data-pts">20</td></tr><tr class="sp-row-no-1 even" role="row"><td class="data-rank">3</td><td class="data-name has-logo"><a href="http://demo.themeboy.com/football-club-soccer/team/bluebirds/"><span class="team-logo"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-128x123.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-128x123.png 128w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-300x289.png 300w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/bluebirds.png 393w" sizes="(max-width: 128px) 100vw, 128px" height="123" width="128"></span>Bluebirds</a></td><td class="data-p">9</td><td class="data-w">5</td><td class="data-d">2</td><td class="data-l">2</td><td class="data-f">14</td><td class="data-a">9</td><td class="data-gd">5</td><td class="data-pts">17</td></tr><tr class="highlighted sp-row-no-2 odd" role="row"><td class="data-rank sp-highlight">4</td><td class="data-name has-logo sp-highlight"><a href="http://demo.themeboy.com/football-club-soccer/team/eagles/"><span class="team-logo"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-106x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-106x128.png 106w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-248x300.png 248w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles-26x32.png 26w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/eagles.png 368w" sizes="(max-width: 106px) 100vw, 106px" height="128" width="106"></span>Eagles</a></td><td class="data-p sp-highlight">9</td><td class="data-w sp-highlight">3</td><td class="data-d sp-highlight">3</td><td class="data-l sp-highlight">3</td><td class="data-f sp-highlight">13</td><td class="data-a sp-highlight">12</td><td class="data-gd sp-highlight">1</td><td class="data-pts sp-highlight">12</td></tr><tr class="sp-row-no-3 even" role="row"><td class="data-rank">5</td><td class="data-name has-logo"><a href="http://demo.themeboy.com/football-club-soccer/team/tigers/"><span class="team-logo"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-115x128.png 115w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-269x300.png 269w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers-29x32.png 29w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/tigers.png 341w" sizes="(max-width: 115px) 100vw, 115px" height="128" width="115"></span>Tigers</a></td><td class="data-p">9</td><td class="data-w">3</td><td class="data-d">3</td><td class="data-l">3</td><td class="data-f">11</td><td class="data-a">11</td><td class="data-gd">0</td><td class="data-pts">12</td></tr><tr class="sp-row-no-4 odd" role="row"><td class="data-rank">6</td><td class="data-name has-logo"><a href="http://demo.themeboy.com/football-club-soccer/team/kangaroos/"><span class="team-logo"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-124x128.png" class="attachment-sportspress-fit-icon size-sportspress-fit-icon wp-post-image" alt="" srcset="http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-124x128.png 124w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-290x300.png 290w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos-32x32.png 32w, http://demo.themeboy.com/football-club-soccer/wp-content/uploads/sites/34/kangaroos.png 393w" sizes="(max-width: 124px) 100vw, 124px" height="128" width="124"></span>Kangaroos</a></td><td class="data-p">9</td><td class="data-w">3</td><td class="data-d">2</td><td class="data-l">4</td><td class="data-f">14</td><td class="data-a">13</td><td class="data-gd">1</td><td class="data-pts">11</td></tr></tbody></table></div></div></div><div class="sp-league-table-link sp-view-all-link"><a href="http://demo.themeboy.com/football-club-soccer/table/primary-league-standings/">View full table</a></div></div>
+</aside></div><div class="sp-widget-align-none">
+</div>		</div>
+
+			</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<div id="secondary" class="widget-area widget-area-right" role="complementary">
+    <div class="sp-widget-align-none">
+    </div><div class="sp-widget-align-none"><aside id="sportspress-event-calendar-3" class="widget widget_sportspress widget_calendar widget_sp_event_calendar"><div class="sp-template sp-template-event-calendar">
+
+<div class="sp-calendar-wrapper">
+<table id="wp-calendar" class="sp-calendar sp-event-calendar sp-data-table">
+<caption class="sp-table-caption">April 2017</caption>
+<thead>
+<tr>
+		<th scope="col" title="Sunday">S</th>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+</tr>
+</thead>
+
+<tfoot>
+<tr>
+		<td colspan="3" id="prev" class="sp-previous-month"><a data-tooltip="" data-options="disable_for_touch:true" class="has-tooltip tip-right" href="/football-club-soccer/?sp_year=2017&amp;sp_month=3" title="March 2017">« Mar</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="sp-next-month"><a data-tooltip="" data-options="disable_for_touch:true" class="has-tooltip tip-left" href="/football-club-soccer/?sp_year=2017&amp;sp_month=5" title="May 2017">May »</a></td>
+</tr>
+</tfoot>
+
+<tbody>
+<tr>
+		<td colspan="6" class="pad">&nbsp;</td><td>1</td>
+	</tr>
+	<tr>
+		<td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
+	</tr>
+	<tr>
+		<td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td>
+	</tr>
+	<tr>
+		<td>16</td><td>17</td><td id="today" class="sp-highlight">18</td><td>19</td><td>20</td><td>21</td><td>22</td>
+	</tr>
+	<tr>
+		<td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td>
+	</tr>
+	<tr>
+		<td>30</td>
+		<td class="pad" colspan="6">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table>
+	</div></div>
+</aside></div><div class="sp-widget-align-none"></div><div class="sp-widget-align-none"><aside id="sportspress-player-list-3" class="widget widget_sportspress widget_player_list widget_sp_player_list"><h4 class="sp-table-caption">Player Ranking</h4><div class="sp-template sp-template-player-list"><div class="sp-table-wrapper"><div class="sp-scrollable-table-wrapper"><div id="DataTables_Table_2_wrapper" class="dataTables_wrapper no-footer"><table class="sp-player-list sp-data-table sp-sortable-table sp-scrollable-table sp-paginated-table dataTable no-footer" data-sp-rows="20" id="DataTables_Table_2" role="grid"><thead><tr role="row"><th class="data-rank sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="Rank">Rank</th><th class="data-name sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="Player">Player</th><th class="data-goals sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="Goals">Goals</th></tr></thead><tbody><tr class="odd" role="row"><td class="data-rank">1</td><td class="data-name has-photo"><a href="http://demo.themeboy.com/football-club-soccer/player/octavio-thurgood/"><span class="player-flag"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/uru.png" alt="uru"></span>Octavio Thurgood</a></td><td class="data-goals">4</td></tr><tr class="even" role="row"><td class="data-rank">2</td><td class="data-name has-photo"><a href="http://demo.themeboy.com/football-club-soccer/player/mark-gerrard/"><span class="player-flag"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/fra.png" alt="fra"></span>Mark Gerrard</a></td><td class="data-goals">4</td></tr><tr class="odd" role="row"><td class="data-rank">3</td><td class="data-name has-photo"><a href="http://demo.themeboy.com/football-club-soccer/player/mack-villarreal/"><span class="player-flag"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/crc.png" alt="crc"></span>Mack Villarreal</a></td><td class="data-goals">3</td></tr><tr class="even" role="row"><td class="data-rank">4</td><td class="data-name has-photo"><a href="http://demo.themeboy.com/football-club-soccer/player/walton-makowski/"><span class="player-flag"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/bra.png" alt="bra"></span>Walton Makowski</a></td><td class="data-goals">2</td></tr><tr class="odd" role="row"><td class="data-rank">5</td><td class="data-name has-photo"><a href="http://demo.themeboy.com/football-club-soccer/player/alphonse-freeberg/"><span class="player-flag"><img src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/images/flags/fin.png" alt="fin"></span>Alphonse Freeberg</a></td><td class="data-goals">2</td></tr></tbody></table></div></div></div><div class="sp-player-list-link sp-view-all-link"><a href="http://demo.themeboy.com/football-club-soccer/list/eagles-roster/">View all players</a></div></div></aside></div></div><!-- #secondary -->
+		<div class="social-sidebar">
+			<a href="https://www.facebook.com/themeboy" title="Facebook" target="_blank" rel="nofollow"><i class="social-sidebar-icon social-sidebar-icon-facebook"></i></a><a href="https://twitter.com/themeboy" title="Twitter" target="_blank" rel="nofollow"><i class="social-sidebar-icon social-sidebar-icon-twitter"></i></a><a href="https://plus.google.com/+ThemeBoyTeam" title="Google+" target="_blank" rel="nofollow"><i class="social-sidebar-icon social-sidebar-icon-google"></i></a><a href="https://www.youtube.com/user/themeboyteam" title="YouTube" target="_blank" rel="nofollow"><i class="social-sidebar-icon social-sidebar-icon-youtube"></i></a>		</div>
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="footer-area">
+			<div id="quaternary" class="footer-widgets" role="complementary">
+									<div class="footer-widget-region"><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Copy title</h3>			<div class="textwidget"><p>copy</p>
+<p>Visit <a href="https://www.themeboy.com/" target="_blank">ThemeBoy</a> Copy</p>
+</div>
+		</aside></div>
+									<div class="footer-widget-region"><aside id="text-4" class="widget widget_text"><h3 class="widget-title">Copy title</h3>			<div class="textwidget"><p>Copy</p>
+<p>Copy</p>
+</div>
+		</aside></div>
+									<div class="footer-widget-region">		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Latest News</h3>		<ul>
+					<li>
+				<a href="http://demo.themeboy.com/football-club-soccer/season-kickoff-imminent/">li copy</a>
+						</li>
+
+
+
+
+				</ul>
+		</aside>		</div>
+							</div>
+		</div><!-- .footer-area -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<div class="site-info">
+	<div class="info-area">
+			<div class="site-copyright">
+		© 2017 Football Club	</div><!-- .site-copyright -->
+		<div class="site-credit">
+		<a href="http://themeboy.com/" target="_parent">Designed by ThemeBoy</a>	</div><!-- .site-info -->
+		</div><!-- .info-area -->
+</div><!-- .site-info -->
+
+<script type="text/javascript" src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/js/jquery.dataTables.min.js?ver=1.10.4"></script>
+<script type="text/javascript" src="http://demo.themeboy.com/football-club-soccer/wp-content/plugins/sportspress-pro/includes/sportspress/assets/js/jquery.countdown.min.js?ver=2.0.2"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var localized_strings = {"days":"days","hrs":"hrs","mins":"mins","secs":"secs","previous":"Previous","next":"Next"};
+/* ]]> */
+</script>
+
+<script type="text/javascript" src="http://demo.themeboy.com/football-club-soccer/wp-content/themes/football-club/plugins/mega-slider/assets/js/mega-slider.js?ver=1.0.1"></script>
+
+
+
+
+
+</body>
+</html>
+

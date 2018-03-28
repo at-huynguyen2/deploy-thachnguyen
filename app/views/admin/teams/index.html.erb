@@ -1,0 +1,60 @@
+<div>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+    Create new ajax<!--%= link_to "Create new", new_admin_team_path %-->
+  </button>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Seed</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody id="js-teams">
+    <%= render @teams %>
+  </tbody>
+</table>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">New team</h4>
+        </div>
+        <div class="modal-body">
+          <div class="">
+            <%= form_for(@team, url: admin_teams_path, method: :post, remote: true) do |f| %>
+                <p>
+                  <%= f.label :name %> <br>
+                  <%= f.text_field :name%>
+                </p>
+                <p>
+                  <%= f.label :short_name%><br>
+                  <%= f.text_field :short_name %>
+                </p>
+                <p>
+                  <%= f.label :seed %> <br>
+                  <%= f.check_box(:seed) %>
+                </p>
+                <p>
+                  <%= f.label :image%>
+                  <%= f.file_field :image %>
+                </p>
+                <p>
+                  <%= f.submit "Create new" %>
+                </p>
+              <% end %>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+
+    </div>
+  </div>

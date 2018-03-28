@@ -1,0 +1,21 @@
+<%= form_for @team, :url => { :action => "create" }, :html => { :multipart => true } do |f| %>
+  <p>
+    <%= f.label :name %> <br>
+    <%= f.text_field :name%>
+  </p>
+  <p>
+    <%= f.label :short_name%><br>
+    <%= f.text_field :short_name %>
+  </p>
+  <p>
+    <%= f.label :seed %> <br>
+    <%= f.check_box(:seed) %>
+  </p>
+  <p>
+    <%= f.label :image%>
+    <%= f.file_field :image %>
+  </p>
+  <p>
+    <%= submit_tag("Submit") %>
+  </p>
+<% end %>
